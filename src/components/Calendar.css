@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.calander{
+    /* width: clamp(393px, 100%, 1920px); */
+    width: 100%;
+    background: conic-gradient(from 180deg at 0% 0%, 
+    #11998e 0deg, #38ef7d 270.09deg, #11998e 360deg);
+    /* background: conic-gradient(from 180deg at 0% 0%, #F6C5FE 0deg, #FE95A8 270.09deg, #F6C5FE 360deg); */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.calander thead, .calander tbody tr{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Ubuntu', sans-serif;
+    color: #0d0d0d;
+}
+.calander thead{
+    /* text-align: left; */
+    font-size: (1rem, -0.875rem + 8.333vw, 2.3rem);
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.3);
+    padding: 20px;
+}
+.calander tbody tr{
+    text-align: center;
+    font-size: (1rem, -0.875rem + 8.333vw, 2.3rem);
+    font-weight: 500;
+    padding: 0 20px;
+}

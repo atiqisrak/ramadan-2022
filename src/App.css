@@ -1,0 +1,33 @@
+@media (min-width: 1024px){
+*{
+ display: none; 
+}
+}
+.calendar{
+  padding-bottom: 85px;
+  background: conic-gradient(from 180deg at 0% 0%, 
+  #11998e 0deg, #38ef7d 270.09deg, #11998e 360deg);
+  /* background: conic-gradient(from 180deg at 0% 0%, #F6C5FE 0deg, #FE95A8 270.09deg, #F6C5FE 360deg); */
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 20px 20px #0d0d0d80;
+}
+.dashboard{
+  padding-bottom: 25px;
+  /* background: conic-gradient(from 180deg at 0% 0%, 
+  #11998e 0deg, #38ef7d 270.09deg, #11998e 360deg); */
+  /* background: conic-gradient(from 180deg at 0% 0%, #F6C5FE 0deg, #FE95A8 270.09deg, #F6C5FE 360deg); */
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 20px 20px #0d0d0d80;
+  background-image: url('./assets/images/bg.png');
+  background-color: #F7F7F7;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 100vw;
+}
+
+.menubar{
+  margin-top: -70px;
+  /* z-index: 999; */
+  position: sticky;
+  bottom: 0;
+}

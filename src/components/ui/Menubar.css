@@ -1,0 +1,30 @@
+.menuholder {
+  background-color: #fff;
+  /* width: 80vw; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+}
+.menuholder .bi-calendar4,.bi-clipboard-check,.bi-clock-history,.bi-person-lines-fill{
+    font-size: 1.8rem;
+    color: #B5B5B5;
+}
+.newTask{
+    margin-top: -70px;
+}
+.bi-plus {
+  padding: 15px 18px;
+  /* background: linear-gradient(263.44deg, #320071 0%, #f95353 220.87%); */
+  background: conic-gradient(from 180deg at 0% 0%, 
+  #11998e 0deg, #38ef7d 360deg, #11998e 270.09deg);
+  box-shadow: 0px 10px 10px #a0a0a0;
+  border-radius: 36px;
+  color: #320071;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.menuholder .active i{
+    color: #320071;
+}
