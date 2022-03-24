@@ -1,29 +1,35 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 const DashboardData = ({
   timetable,
   sahriToday,
   iftarToday,
-  current,
+  currentN,
   currentD,
   setCurrentD,
 }) => {
-  // console.log(timetable);
-  const handleClick = (id) => {
+  const handleClick = (id, index) => {
     setCurrentD(id);
-    // setActive(id);
   };
 
-  // const [active, setActive] = useState(1);
 
   const dateFunc = (dhur, id) => {
     let eDate = new Date(dhur);
     
-    if (current.getDate() === eDate.getDate()) {
-      console.log(current);
-      // setActive(id);
+    if (currentN.getDate() === eDate.getDate()) {
       setCurrentD(id);
     }
   }
+
+  const myRef = useRef(currentD);
+
+  useEffect(() => {
+    myRef.current?.scrollIntoView ({
+      behavior: "smooth",
+      block: "end",
+      inline: "center"
+    });
+  }, [currentD])
+  console.log(currentD);
 
   return (
     <>
@@ -32,8 +38,9 @@ const DashboardData = ({
 
           <>
             <div
-              className={ currentD === timetable.id ? "dayboom active" : "dayboom" }
+              className={ currentD === timetable.id ? "dayboom active" : "dayboom"  }
               onClick={() => handleClick(timetable.id)}
+              ref={currentD === timetable.id ? myRef : null}
             >
               <h3 className="weekday">{timetable.weekday}</h3>
               <h3 className="monthdate">{timetable.day}</h3>
