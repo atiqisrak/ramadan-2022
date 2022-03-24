@@ -83,9 +83,7 @@ const Dashboard = () => {
       </div>
       <div className="dailyquote">
         <p>
-          "O you who have believed, decreed upon you is fasting as it was
-          decreed upon those before you that you may become righteous" - Surat
-          Al-Baqarah 2:183
+        হে ঈমানদারগণ! তোমাদের ওপর রোজা ফরজ করা হয়েছে, যেরূপ ফরজ করা হয়েছিল তোমাদের পূর্ববর্তী লোকদের ওপর, <br/> যেন তোমরা পরহেযগারী অর্জন করতে পার। (সূরা : বাকারা, আয়াত : ১৮৩)
         </p>
       </div>
       <div className="date">
