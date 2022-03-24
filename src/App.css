@@ -1,8 +1,8 @@
-@media (min-width: 1024px){
+/* @media (min-width: 1024px){
 *{
  display: none; 
 }
-}
+} */
 .calendar{
   padding-bottom: 85px;
   background: conic-gradient(from 180deg at 0% 0%, 

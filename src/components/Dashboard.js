@@ -9,15 +9,15 @@ const Dashboard = () => {
   const [currentD, setCurrentD] = useState(1);
   // console.log(currentD);
 
-  const current = new Date();
+  const currentN = new Date();
 
-  const date = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
+  const date = `${currentN.getDate()}/${
+    currentN.getMonth() + 1
+  }/${currentN.getFullYear()}`;
 
-  const today = `${current.getDate()}`;
+  const today = `${currentN.getDate()}`;
 
-  const year = `${current.getFullYear()}`;
+  const year = `${currentN.getFullYear()}`;
 
   const monthNames = [
     "January",
@@ -33,7 +33,7 @@ const Dashboard = () => {
     "November",
     "December",
   ];
-  const month = monthNames[current.getMonth()];
+  const month = monthNames[currentN.getMonth()];
   const formatAMPM = (date) => {
     let hours = date.getHours();
     let minutes = date.getMinutes();
@@ -44,7 +44,7 @@ const Dashboard = () => {
     const strTime = `${hours}:${minutes} ${ampm}`;
     return strTime;
   };
-  const currentTime = formatAMPM(current);
+  const currentTime = formatAMPM(currentN);
   const [timetable] = useState(calendar);
   // Lottie
   const ramadanAnim = {
@@ -94,7 +94,7 @@ const Dashboard = () => {
         {/* <h2 className="month">Ramadan (رَمَضَان)</h2> */}
       </div>
       <div className="dateSelect">
-        <DashboardData currentD={currentD} timetable={timetable} sahriToday={sahriToday} iftarToday={iftarToday} setCurrentD={setCurrentD} current={current} />
+        <DashboardData currentD={currentD} timetable={timetable} sahriToday={sahriToday} iftarToday={iftarToday} setCurrentD={setCurrentD} currentN={currentN} />
       </div>
 
       <div className="map">

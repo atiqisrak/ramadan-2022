@@ -63,6 +63,12 @@
   width: 0;
   background: transparent;
 }
+@media (min-width: 1024px){
+  .mother::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background: #8dc63f;
+}
+}
 .dateSelect .dayboom {
   display: flex;
   flex-direction: column;
@@ -98,7 +104,7 @@
 }
 .timeToday {
   padding: 30px;
-  margin: 0 0 40px 0;
+  margin: 30px 0 40px 0;
   background: radial-gradient(100% 100% at 50.15% 0%, #8dc63f 0%, #578e1c 100%);
   box-shadow: 0px 4px 20px rgba(87, 142, 28, 0.1);
   border-radius: 10px;
@@ -117,7 +123,7 @@
   align-items: center;
 }
 .timeToday h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: normal;
   font-weight: 500;
   letter-spacing: 1px;
@@ -125,7 +131,7 @@
   padding-bottom: 20px;
 }
 .timeToday h2 span{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 .timeToday h3 {
